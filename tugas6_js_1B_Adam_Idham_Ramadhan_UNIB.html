@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form id="formulir">
+            <div class="box">
+            <table align="center" cellpadding="10"  cellspacing="0">
+                <thead><tr><th colspan="2">Kalkulatorku</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td width="30%">Angka 1</td>
+                        <td><input type="text" name="a1" id="a1" onfocus="kosong1()" value="0"/></td>
+                    </tr>
+                    <tr>
+                        <td>Angka 2</td>
+                        <td><input type="text" name="a2" id="a2" onfocus="kosong2()" value="0"/></td>
+                    </tr>
+                    <tr>
+                        <td>Hasil</td>
+                        <td><input type="text" name="hasil"  id="hasil" value="0" disabled/></td>
+                    </tr>
+                </tbody>
+                <tfoot><tr><th colspan="2" >
+                    <input type="button" name="tambah" value="+" onclick="(new hitung()).tambah();" />
+                    <input type="button" name="kurang" value="-" onclick="(new hitung()).kurang();" />
+                    <input type="button" name="kali" value="x" onclick="(new hitung()).kali();" />
+                    <input type="button" name="bagi" value="/" onclick="(new hitung()).bagi();" />
+                    <input type="button" name="pangkat" value="^" onclick="(new hitung()).pangkat();" />
+                    <input type="button" name="batal" value="Batal" onclick="(new hitung()).kosong();" />
+                </th></tr></tfoot>
+            </table>
+            </div>
+        </form>
+    </body>
+    <script src="script.js"></script>
+</html>
+
