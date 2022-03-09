@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tugas 1</title>
+        <link rel="stylesheet" href="css/style1.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript">
+            $("document").ready(function () {
+                $("div.kucing").click(function () {
+                    $(this).css({
+                        background: "url('image/kucing.jpg')"
+                    });
+                    $("<audio></audio>").attr({
+                        'src': 'audio/kucing.mp3',
+                        'volume': 10,
+                        'autoplay': 'autoplay'
+                    }).appendTo("body");
+                });
+                $("div.sapi").click(function () {
+                    $(this).css({
+                        background: "url('image/sapi.jpg')"
+                    });
+                    $("<audio></audio>").attr({
+                        'src': 'audio/sapi.mp3',
+                        'volume': 10,
+                        'autoplay': 'autoplay'
+                    }).appendTo("body");
+                });
+                    $("div.kambing").click(function () {
+                    $(this).css({
+                        background: "url('image/kambing.jpg')"
+                    });
+                    $("<audio></audio>").attr({
+                        'src': 'audio/kambing.mp3',
+                        'volume': 10,
+                        'autoplay': 'autoplay'
+                    }).appendTo("body");
+                });
+                $("div.gajah").click(function () {
+                    $(this).css({
+                        background: "url('image/gajah.jpg')",
+                    });
+                    $("<audio></audio>").attr({
+                        'src': 'audio/gajah.mp3',
+                        'volume': 10,
+                        'autoplay': 'autoplay'
+                    }).appendTo("body");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h2 align="center">Klik setiap kotak untuk menampilkan hewan</h2>
+        <hr/>
+        <table align="center">
+            <tr>
+                <td><div class="kucing"></div></td>
+                <td><div class="sapi"></div></td>
+                <td><div class="kambing"></div></td>
+                <td><div class="gajah"></div></td>
+            </tr>
+            <tr>
+                <th><h2>Kucing</h2></th>
+                <th><h2>Sapi</h2></th>
+                <th><h2>Kambing</h2></th>
+                <th><h2>Gajah</h2></th>
+            </tr>
+        </table>
+    </body>
+</html>
