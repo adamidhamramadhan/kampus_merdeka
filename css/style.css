@@ -1,0 +1,14 @@
+.carousel{
+    overflow: hidden;
+    width: fit-content;
+    height: 250px;
+}
+.carousel img{
+    width: 100%;
+}
+.navbar{
+    margin-bottom: 20px;
+}
+#footer{
+    margin-top: 20px;
+}
