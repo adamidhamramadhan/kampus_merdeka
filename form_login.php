@@ -55,9 +55,16 @@
     function cekLogin($username, $password) {
       if ($username == 'admin' && $password == 'mimin') {
         header('Location: home.php');
-        exit();
+        exit;
+      }
+      else{
+        echo "<script>
+          alert('username atau password salah!');
+          history.go(-1);
+        </script>";
       }
     }
+    if(isset($_POST['login'])) cekLogin($_POST['username'],$_POST['password']);
     ?>
   <form action="#" method="POST">
             <div class="box">
@@ -74,7 +81,7 @@
                     </tr>
                 </tbody>
                 <tfoot><tr><th colspan="2" >
-                    <input type="submit" name="login" value="Submit"><?= cekLogin($username, $password) ?>
+                    <input type="submit" name="login" value="Submit" >
                 </th></tr></tfoot>
             </table>
             </div>
